@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <!-- Material Design Lite -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+</head>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout  mdl-layout--fixed-header">
+      <header class="mdl-layout__header nav">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"  style="font-family: 'Macondo', cursive !important;">🦅Travelling Kaputas</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="./index.html">Schedule a Trip</a>
+            <a class="mdl-navigation__link" href="../HTML/view.html">View Trips</a>
+            <a class="mdl-navigation__link" href="../HTML/login.html">Log Out</a>
+            
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title" style="font-family: 'Macondo', cursive !important;" >🦅Travelling Kaputas</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="./index.html">Schedule a Trip</a>
+          <a class="mdl-navigation__link" href="./view.html">View Trips</a>
+          <a class="mdl-navigation__link" href="../HTML/login.html">Log Out</a>
+          
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+           
+            <div class="splash">
+              <h1 class="splash-header">Welcome to <span style="font-family: 'Macondo', cursive;
+                "> Travelling Kaputas</span></h1>
+                <h4  style="font-family: 'Macondo', cursive; text-align: center;">Schedule flight to your favourite destination through a touch of a button</h4>
+            </div>
+
+
+            <div class="map-container">
+
+            </div>
+
+            
+           <div class="plan-summary-container">
+            <ul class="demo-list-item mdl-list">
+              <li class="mdl-list__item summary-text ">
+                <span class="mdl-list__item-primary-content">
+                  Date:<span id="date-val" style="margin-left: 17px !important;"></span>
+                </span>
+              </li>
+              <li class="mdl-list__item summary-text ">
+                <span class="mdl-list__item-primary-content">
+                  Path:<span id="path-val" style="margin-left: 17px !important;"> </span>
+                </span>
+              </li>
+              <li class="mdl-list__item summary-text ">
+                <span class="mdl-list__item-primary-content">
+                  Time:<span id="time-val" style="margin-left: 17px !important;"> </span>
+                </span>
+              </li>
+              <li class="mdl-list__item summary-text ">
+                <span class="mdl-list__item-primary-content">
+                  No. of stops:<span id="stops-val" style="margin-left: 17px !important;"> </span>
+                </span>
+              </li>
+            </ul>
+            
+            <div class="button-tab">
+              <button type="button" class="trip-save mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect save-exit" style="color: rgba(63,99,252,1); background-color:rgb(255, 255, 255); margin-left:20px;  font-weight: 600; border-radius: 15px;">
+                Save and Exit
+              </button>      
+            </div>
+            
+           </div>
+
+
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/shared.js"></script>
+    <script src="../js/detailed.js"></script>
+  </body>
+</html>
